@@ -1,0 +1,10 @@
+{
+	"ERROR1":{
+			"code":404,
+			"msg":"No se ha encontrado"
+		},
+	"ERROR2":{
+			"code":500,
+			"msg":"Todo mal"
+	}
+}

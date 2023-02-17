@@ -1,7 +1,9 @@
-package com.guillermo.exception.service;
+package com.guillermo.exception;
 
 import org.springframework.http.HttpStatusCode;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.guillermo.exception.enums.ErrorCode;
 
 public class ServiceException extends ResponseStatusException {
 
@@ -13,6 +15,10 @@ public class ServiceException extends ResponseStatusException {
 
 	public ServiceException(HttpStatusCode status, String reason) {
 		super(status, reason);
+	}
+	
+	public ServiceException(String code) {
+		super(HttpStatusCode.valueOf(ErrorCode.get(code).getCode()), ErrorCode.get(code).getMsg());
 	}
 
 }

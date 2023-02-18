@@ -1,4 +1,4 @@
-package com.guillermo.exception.enums;
+package com.guillermo.exception;
 
 import java.io.File;
 import java.nio.file.Paths;

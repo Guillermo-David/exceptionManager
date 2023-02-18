@@ -3,8 +3,6 @@ package com.guillermo.exception;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.guillermo.exception.enums.ErrorCode;
-
 public class ServiceException extends ResponseStatusException {
 
 	private static final long serialVersionUID = 1250950619708926026L;
